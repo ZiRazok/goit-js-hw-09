@@ -5,6 +5,7 @@ const formData = JSON.parse(localStorage.getItem(localStorageKey)) ?? { email: "
 form.elements.email.value = formData.email;
 form.elements.message.value = formData.message;
 
+
 form.addEventListener("input", (event) => {
     if (event.target === form.elements.email) formData.email = event.target.value;
     if (event.target === form.elements.message) formData.message = event.target.value;
